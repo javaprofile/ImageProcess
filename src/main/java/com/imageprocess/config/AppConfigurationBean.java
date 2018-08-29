@@ -23,7 +23,7 @@ public class AppConfigurationBean implements WebServerFactoryCustomizer<Configur
 
 	@Override
 	public void customize(ConfigurableServletWebServerFactory factory) {
-		factory.setContextPath("/imageprocess/rest");
+		//factory.setContextPath("/imageprocess/rest");
 		
 	}
 
