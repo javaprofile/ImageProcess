@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.imageprocess.model.User;
+import com.imageprocess.service.UserService;
 
 /**
  * @author vipul
@@ -23,8 +24,6 @@ public class WelcomeController {
 	@Autowired
     private UserService userService;
 	
-	@Autowired
-    private UserValidator userValidator;
 	/**
 	 * 
 	 */
@@ -42,7 +41,6 @@ public class WelcomeController {
 	
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
-        userValidator.validate(userForm, bindingResult);
 
         if (bindingResult.hasErrors()) {
             return "registration";
@@ -50,7 +48,6 @@ public class WelcomeController {
 
         userService.save(userForm);
 
-        securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
 
         return "redirect:/welcome";
     }
