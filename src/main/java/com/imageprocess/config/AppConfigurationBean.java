@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @author vipul
  *
  */
-@Component
+//@Component
 public class AppConfigurationBean implements WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> {
 
 	/**
