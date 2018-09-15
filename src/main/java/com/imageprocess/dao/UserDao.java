@@ -1,9 +1,21 @@
 package com.imageprocess.dao;
 
-public class UserDao {
+import java.util.List;
 
-	public UserDao() {
-		// TODO Auto-generated constructor stub
-	}
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.imageprocess.model.User;
+
+@Repository
+public interface UserDao extends CrudRepository<User, Long>{
+	List<User> findAll();
+
+    User findByUserName(String userName);
+
+    User findByUserId(Long userId);
+
+    User save(User user);
+
 
 }
