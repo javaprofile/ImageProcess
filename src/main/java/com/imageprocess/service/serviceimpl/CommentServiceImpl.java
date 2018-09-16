@@ -20,17 +20,24 @@ public class CommentServiceImpl implements CommentService {
 	@Autowired
     private CommentDao commentDao;
 
-    public Comment save(Comment comment) {
-        return commentDao.save(comment);
-    }
+	@Override
+	public Comment save(Comment comment) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    public Comment findOne (Long commentId) {
-        return commentDao.findOne(commentId);
-    }
+	@Override
+	public List<Comment> findByPhotoId(Long photoId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    public List<Comment> findByPhotoId (Long photoId) {
-        return commentDao.findByPhotoId(photoId);
-    }
+	@Override
+	public Comment findOne(Long commentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 
 }

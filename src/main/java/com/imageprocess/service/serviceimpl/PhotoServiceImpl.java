@@ -25,21 +25,30 @@ public class PhotoServiceImpl implements PhotoService {
     @Autowired
     private PhotoDao photoDao;
 
-    public Photo save(Photo photo) {
-        return photoDao.save(photo);
-    }
+	@Override
+	public Photo save(Photo photo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    public List<Photo> findAll() {
-        return photoDao.findAll();
-    }
+	@Override
+	public List<Photo> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    public List<Photo> findByUser(User user) {
-        return photoDao.findByUser(user);
-    }
+	@Override
+	public List<Photo> findByUser(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    public Photo findByPhotoId(Long photoId) {
-        return photoDao.findByPhotoId(photoId);
-    }
+	@Override
+	public Photo findByPhotoId(Long photoId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 
 }

@@ -18,18 +18,18 @@ public class UserServiceImpl implements UserService {
 	@Autowired
     private UserDao userDao;
 
-    public List<User> findAllUsers() {
-        return userDao.findAll();
-    }
-
-    public void save(User user) {
-        userDao.save(user);
-    }
+	@Override
+	public void save(User user) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	@Override
 	public User findByUsername(String username) {
-		return userDao.findByUserName( username );
+		// TODO Auto-generated method stub
+		return null;
 	}
+
 
    
 

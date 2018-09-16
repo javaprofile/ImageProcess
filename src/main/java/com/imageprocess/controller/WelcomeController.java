@@ -21,7 +21,7 @@ import com.imageprocess.service.UserService;
 @Controller
 public class WelcomeController {
 
-	@Autowired
+	//@Autowired
     private UserService userService;
 	
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)

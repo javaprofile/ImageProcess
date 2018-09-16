@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Primary;
  * @author vipul
  *
  */
-@Configuration
+//@Configuration
 public class DatabaseConfig {
 
 	/**
@@ -25,9 +25,9 @@ public class DatabaseConfig {
 	}
 	
 	
-	@Bean
-    @Primary
-    @ConfigurationProperties(prefix = "spring.datasource")
+	//@Bean
+    //@Primary
+    //@ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource() {
         return (DataSource) DataSourceBuilder.create().build();
     }
