@@ -16,12 +16,10 @@ import com.imageprocess.model.User;
  * @author vipul
  *
  */
-@Repository
-public class PhotoDao {
+public interface PhotoDao {
 
 
-	@Autowired
-	private JdbcTemplate jdbcTemplate;
+	public void save( Photo photo );
 
 
 }

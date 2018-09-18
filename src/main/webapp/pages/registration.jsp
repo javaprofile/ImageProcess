@@ -6,14 +6,14 @@
             <title>Registration</title>
         </head>
         <body>
-            <form:form modelAttribute="userForm" action="/userForm" method="post">
+            <form:form id="regForm" modelAttribute="userForm" action="registerUser" method="post">
                 <table align="center">
                     <tr>
                         <td>
-                            <form:label path="username">Username</form:label>
+                            <form:label path="userName">Username</form:label>
                         </td>
                         <td>
-                            <form:input path="username" name="userName" id="username" />
+                            <form:input path="userName" name="userName" id="username" />
                         </td>
                     </tr>
                     <tr>
@@ -26,30 +26,30 @@
                     </tr>
                     <tr>
                         <td>
-                            <form:label path="firstname">FirstName</form:label>
+                            <form:label path="firstName">FirstName</form:label>
                         </td>
                         <td>
-                            <form:input path="firstname" name="firstName" id="firstname" />
+                            <form:input path="firstName" name="firstName" id="firstname" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <form:label path="lastname">LastName</form:label>
+                            <form:label path="lastName">LastName</form:label>
                         </td>
                         <td>
-                            <form:input path="lastname" name="lastName" id="lastname" />
+                            <form:input path="lastName" name="lastName" id="lastname" />
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <form:button name="registration">Registration</form:button>
+                            <form:button id="register" name="register">Register</form:button>
                         </td>
                     </tr>
                     <tr></tr>
                     <tr>
                         <td></td>
-                        <td><a href="home.jsp">Login</a>
+                        <td><a href="/">Login</a>
                         </td>
                     </tr>
                 </table>

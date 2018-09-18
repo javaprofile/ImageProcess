@@ -7,6 +7,8 @@
 <title>Home Page</title>
 </head>
 <body>
-
+<div>
+<a href="/uploadFileView">Upload</a>
+</div>
 </body>
 </html>

@@ -7,14 +7,14 @@
             <title>Login</title>
         </head>
         <body>
-            <form:form id="loginForm" modelAttribute="user" action="login" method="post">
+            <form:form id="loginForm" modelAttribute="login" action="loginProcess" method="post">
                 <table align="center">
                     <tr>
                         <td>
-                            <form:label path="username">Username: </form:label>
+                            <form:label path="userName">Username: </form:label>
                         </td>
                         <td>
-                            <form:input path="username" name="userName" id="username" />
+                            <form:input path="userName" name="userName" id="username" />
                         </td>
                     </tr>
                     <tr>
@@ -34,7 +34,7 @@
                     <tr></tr>
                     <tr>
                         <td></td>
-                        <td><a href="home.jsp">User Registration</a>
+                        <td><a href="registration">Register</a>
                         </td>
                     </tr>
                 </table>
